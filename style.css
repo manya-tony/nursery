@@ -1,0 +1,321 @@
+@charset "UTF-8";
+
+/* 基本色 */
+:root {
+  --class00-color: #BA79CB;
+  --class01-color: #daae00;
+  --class02-color: #FF6663;
+  --class03-color: #25D366;
+  --class04-color: #34B7F1;
+  --class05-color: #F66292;
+  --main-color: #28CCB4;
+  --main-color-white: #f5f5f5;
+  --button-ok-color: #F6BD4A;
+  --button-back-color: #3DB0CB;
+  --basic-text-color: #5B676D;
+  --error-text-color: #CD0000;
+}
+
+/* 全体 */
+body {
+  background: var(--main-color-white);
+}
+body,h1,p {
+  margin: 0;
+  padding: 0;
+  font-family: "M PLUS Rounded 1c";
+  color: var(--basic-text-color);
+}
+h2 {
+  font-size: 30px;
+}
+p, span {
+  font-size: 16px;
+  /* text-align: center; */
+}
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.error_text {
+  color: var(--error-text-color);
+}
+a {
+  text-decoration: none;
+  font-size: 16px;
+  color: var(--basic-text-color);
+}
+.title {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  color: var(--basic-text-color);
+}
+.check_text {
+  font-size: 18px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.back_to {
+  margin-top: 30px;
+}
+.back_to a:hover {
+  text-decoration: underline;
+}
+
+
+/* ボタンのデザイン */
+.button {
+  width: 70px;
+  height: 35px;
+  border: none;
+  border-radius: 20px;
+  text-align: center;
+  font-size:18px;
+  color: var(--main-color-white);
+  cursor: pointer;
+  margin-top: 20px;
+}
+.ok {
+  background: var(--button-ok-color);
+}
+.back {
+  background: #c0c0c0;
+}
+.other_button {
+  font-size: 13px;
+  border: none;
+  background: #c0c0c0;
+  border-radius: 50px;
+  padding: 2px;
+  width: 50px;
+  box-sizing: border-box;
+  margin-top: 10px;
+  margin-right: 10px;
+  color: var(--basic-text-color);
+  cursor: pointer;
+}
+.other_button:last-child {
+  margin-right: 0;
+}
+
+
+/* フォームのデザイン */
+form {
+  width:300px;
+  margin: 0 auto;
+  position: relative;
+}
+select {
+  font-size: 24px;
+  background: var(--main-color-white);
+  margin-top: 5px;
+  color: var(--basic-text-color);
+  padding: 3px;
+}
+input {
+  color: var(--basic-text-color);
+  font-size: 16px;
+  margin-top: 5px;
+}
+.login_text {
+  width: 200px;
+  margin-bottom: 10px;
+  padding: 3px;
+}
+
+
+/* ヘッダー */
+header {
+  width: 100%;
+  padding: 10px;
+  background: var(--main-color-white);
+  box-sizing: border-box;
+}
+header h1 {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+header h1 a {
+  display: block;
+  font-size: 20px;
+  color: var(--main-color);
+}
+
+
+/* メイン */
+main {
+  overflow: hidden;
+  max-width: 800px;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+.container {
+  max-width: 800px;
+  min-height: 100vh;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+/* クラスリスト */
+.class_list {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 20px 10px 10px 10px;
+  flex-wrap: wrap;
+  border-top: 1px solid var(--main-color);
+  border-bottom: 1px solid var(--main-color);
+}
+.class {
+  width: 100px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 20px;
+  text-align: center;
+  margin: 0 10px 10px 0;
+  border-radius: 20px;
+}
+.class:last-child {
+  margin-right: 0;
+}
+.class:hover {
+  opacity: .8;
+}
+.class00 {
+  background-color: var(--class00-color);
+}
+.class01 {
+  background-color: var(--class01-color);
+}
+.class02 {
+  background-color: var(--class02-color);
+}
+.class03 {
+  background-color: var(--class03-color);
+}
+.class04 {
+  background-color: var(--class04-color);
+}
+.class05 {
+  background-color: var(--class05-color);
+}
+.class a {
+  display: block;
+  color: var(--main-color-white);
+}
+
+
+/* 園児リスト */
+.child_list {
+  max-width: 700px;
+  padding: 30px 10px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+.child_list_class {
+  font-size: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.child_wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.child {
+  width: 330px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 20px;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+.child a {
+  display: block;
+  font-size: 20px;
+  color: var(--main-color-white);
+}
+.child a .phonetic {
+  font-size: 14px;
+  margin-left: 30px;
+}
+
+
+/* 登降園きろく */
+.time {
+  margin: 50px 0;
+  font-size: 34px;
+}
+.child_stamp_waku {
+  width: 100px;
+  color: var(--main-color-white);
+  background-color: var(--basic-text-color);
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  line-height: 24px;
+  border-radius: 2px;
+}
+.child_stamp_name {
+  font-size: 20px;
+}
+.child_stamp_phonetic {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.child_stamp_class {
+  font-size: 20px;
+}
+.enter_button {
+  background: var(--button-ok-color);
+  margin: 0 15px;
+}
+.out_button {
+  background: var(--button-back-color);
+  margin: 0 15px;
+}
+
+
+/* フッター */
+footer {
+  flex: 0 0 100%;
+  height: 40px;
+  background: var(--main-color);
+  padding: 10px;
+  box-sizing: border-box;
+}
+footer p {
+  color: var(--main-color-white);
+  text-align: center;
+}
+footer a {
+  font-size: 14px;
+  color: var(--main-color-white);
+}
+footer a:hover{
+  text-decoration: underline;
+}
+
+
+/* メディアクエリ */
+@media (max-width:700px) {
+  .child_wrap {
+    justify-content: center;
+  }
+}
+@media (max-width:400px) {
+  .child {
+    width: 100%;
+  }
+}
